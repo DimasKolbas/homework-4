@@ -18,7 +18,8 @@ p,
 a,
 img,
 div,
-button {
+button,
+svg {
   margin: 0;
   padding: 0;
 }
@@ -73,7 +74,7 @@ body {
 }
 
 .header-navigation {
-  margin-right: 350px;
+  margin-right: 300px;
 }
 
 .header-list {
@@ -98,7 +99,21 @@ body {
   color: var(--accent-color);
 }
 
+.header-contacts-list {
+  display: flex;
+}
+
+.header-contacts-list-item {
+}
+
+.header-mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
 .header-mail {
+  width: 161px;
   margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
@@ -107,7 +122,14 @@ body {
   color: var(--secondary-color);
 }
 
+.header-tel-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
 .header-tel {
+  width: 142px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14px;
@@ -116,11 +138,23 @@ body {
 }
 
 .header-pages:hover,
-:focus,
-.header-mail:hover,
-:focus,
-.header-tel:hover,
 :focus {
+  color: var(--hover-color);
+}
+
+.header-contacts-list-item:hover .header-mail-icon {
+  fill: var(--hover-color);
+}
+
+.header-contacts-list-item:hover .header-mail {
+  color: var(--hover-color);
+}
+
+.header-contacts-list-item:hover .header-tel-icon {
+  fill: var(--hover-color);
+}
+
+.header-contacts-list-item:hover .header-tel {
   color: var(--hover-color);
 }
 
@@ -296,7 +330,6 @@ body {
   width: 44px;
   height: 44px;
   padding: 12px;
-  background-size: contain;
 }
 
 .command-section-icon-item:not(:last-child) {
@@ -314,8 +347,54 @@ body {
   border-radius: 50%;
 }
 
-.command-section-icon:hover {
+.command-section-icon-item:hover .command-section-icon {
   fill: var(--light-color);
+}
+
+/* *COSTOMERS SECTION* */
+.costomers-section {
+  margin: 94px auto;
+  display: block;
+}
+
+.costomers-section-caption {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17em;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.costomers-section-list {
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.costomers-section-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.costomers-section-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.costomers-section-icon {
+  margin: 16px 32px;
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+
+.costomers-section-item:hover {
+  border-color: var(--hover-color);
+}
+
+.costomers-section-item:hover .costomers-section-icon {
+  fill: var(--hover-color);
 }
 
 /* !PORTFOLIO SECTOR!
@@ -411,18 +490,26 @@ body {
 .footer-section {
   max-width: 1600px;
   margin: 0 auto;
-}
-
-.footer-section-content {
   background-color: var(--footer-color);
 }
 
+.footer-section-content {
+  display: flex;
+}
+
+.footer-section-contacts {
+  margin-right: 70px;
+}
+
 .footer-logo {
-  padding: 60px 1240px 20px 215px;
+  width: 145px;
+  height: 31px;
+  margin: 70px 0 10px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19px;
+  text-align: left;
   color: var(--hover-color);
 }
 
@@ -430,18 +517,71 @@ body {
   color: var(--light-color);
 }
 
-.footer-adress-list {
-  padding: 0 1154px 60px 215px;
+.footer-adress {
+  margin-bottom: 60px;
   text-align: left;
 }
 
-.footer-adress-item {
-  font-style: normal;
+.footer-adress-text {
   font-size: 14px;
+  font-style: normal;
   line-height: 1.71em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-adress-text:first-child {
   color: var(--light-color);
+}
+
+.footer-adress-text:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-adress-item {
 }
 
 .footer-adress-item:not(:first-child) {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-action {
+  margin-top: -50px;
+}
+
+.footer-action-content {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--light-color);
+}
+
+.footer-action-icon-list {
+  display: flex;
+}
+
+.footer-action-icon-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  /* outline: 2px solid tomato; */
+}
+
+.footer-action-icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-action-icon {
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  fill: var(--light-color);
+}
+
+.footer-action-icon-item:hover {
+  background-color: var(--hover-color);
 }

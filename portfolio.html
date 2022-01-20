@@ -32,16 +32,31 @@
             <li class="header-list-item link">
               <a href="./index.html" class="header-pages link">Студия</a>
             </li>
+
             <li class="header-list-item link">
               <a href="./portfolio.html" class="header-pages link">Портфолио</a>
             </li>
+
             <li class="header-list-item link">
               <a href="" class="header-pages link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <a href="mailto:info@devstudio.com" class="header-mail link">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="header-tel link">+38 096 111 11 11</a>
+        <ul class="header-contacts-list link">
+          <li class="header-contacts-list-item">
+            <svg class="header-mail-icon">
+              <use href="images/svg/symbol-defs.svg#icon-envelope"></use>
+            </svg>
+            <a href="mailto:info@devstudio.com" class="header-mail link">info@devstudio.com</a>
+          </li>
+
+          <li class="header-contacts-list-item">
+            <svg class="header-tel-icon">
+              <use href="images/svg/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+            <a href="tel:+380961111111" class="header-tel link">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -174,21 +189,43 @@
 
     <!-- *FOOTER SECTION* -->
     <footer class="footer-section">
-      <div class="footer-section-content">
-        <p class="footer-logo">Web<span class="footer-logo-piece">Studio</span></p>
-        <address class="footer-adress">
-          <ul class="footer-adress-list">
-            <li class="footer-adress-item link">
-              <p class="footer-adress-text">г. Киев, пр-т Леси Украинки, 26</p>
+      <div class="footer-section-content container">
+        <div class="footer-section-contacts">
+          <p class="footer-logo">Web<span class="footer-logo-piece">Studio</span></p>
+          <address class="footer-adress">
+            <p class="footer-adress-text">г. Киев, пр-т Леси Украинки, 26</p>
+            <p class="footer-adress-text">info@example.com</p>
+            <p class="footer-adress-text">+38 099 111 11 11</p>
+          </address>
+        </div>
+        <div class="footer-action">
+          <p class="footer-action-content"><b>присоединяйтесь</b></p>
+          <ul class="footer-action-icon-list link">
+            <li class="footer-action-icon-item">
+              <svg class="footer-action-icon">
+                <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+              </svg>
             </li>
-            <li class="footer-adress-item link">
-              <p class="footer-adress-text">info@example.com</p>
+
+            <li class="footer-action-icon-item">
+              <svg class="footer-action-icon">
+                <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
+              </svg>
             </li>
-            <li class="footer-adress-item link">
-              <p class="footer-adress-text">+38 099 111 11 11</p>
+
+            <li class="footer-action-icon-item">
+              <svg class="footer-action-icon">
+                <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </li>
+
+            <li class="footer-action-icon-item">
+              <svg class="footer-action-icon">
+                <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
